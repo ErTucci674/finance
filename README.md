@@ -12,6 +12,7 @@ The project makes use of HTML and Jinja web template engine.
 + Python
 
 ## Program and Execute Project 🗔
+### Requirements 🗉
 Programming/markup languages needed:
 + HTML/CSS
 + SQL
@@ -22,7 +23,21 @@ Frameworks used:
 + Flask (Jinja) - Python
 
 Libraries:
-+ CS50
++ CS50 - Python
+
+The CS50 Python library can be installed with the `pip` command.
+
+```
+pip3 install CS50
+```
+
+Otherwise, you can manually install the libraries from [CS50 Python Libraries GitHub](https://github.com/cs50/python-cs50) and include them in the repository.
+
+### Execute ▶️
+Start by cloning the repository in your local machine
+```
+git clone https://github.com/ErTucci674/cs50-finance.git
+```
 
 To run the program, on the command prompt, execute the code:
 ```
