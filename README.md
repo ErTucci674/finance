@@ -1,4 +1,4 @@
-# CS50 Finance
+# Finance
 A finance website where the user can login with their own credentials, buy and sell stocks.
 
 ## About the Project 📖
