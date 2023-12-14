@@ -1,36 +1,56 @@
+<!--
+Copyright (C) 2023 Alessandro Amatucci Girlanda
+
+This file is part of Finance.
+
+Finance is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Finance is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Finance. If not, see
+<https: //www.gnu.org/licenses />.
+-->
+
 {% extends "layout.html" %}
 
 {% block title %}
-    Home
+Home
 {% endblock %}
 
 {% block main %}
-    <div>
-        <p style="text-align: left; font-size: 30px;">Your Cash: {{ cash }}</p>
-    </div>
+<div>
+    <p style="text-align: left; font-size: 30px;">Your Cash: {{ cash }}</p>
+</div>
 
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Symbol</th>
-                <th scope="col">Price</th>
-                <th scope="col">Shares</th>
-                <th scope="col">TOTAL</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for stock in stocks %}
-                <tr>
-                    <td>{{ stock.symbol }}</td>
-                    <td>{{ stock.price }}</td>
-                    <td>{{ stock.shares }}</td>
-                    <td>{{ stock.total }}</td>
-                </tr>
-            {% endfor %}
-            <tr>
-                <th colspan="2">TOTAL VALUE</th>
-                <td colspan="2">{{ total }}</td>
-            </tr>
-        </tbody>
-    </table>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Price</th>
+            <th scope="col">Shares</th>
+            <th scope="col">TOTAL</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stock in stocks %}
+        <tr>
+            <td>{{ stock.symbol }}</td>
+            <td>{{ stock.price }}</td>
+            <td>{{ stock.shares }}</td>
+            <td>{{ stock.total }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <th colspan="2">TOTAL VALUE</th>
+            <td colspan="2">{{ total }}</td>
+        </tr>
+    </tbody>
+</table>
 {% endblock %}

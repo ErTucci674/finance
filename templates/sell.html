@@ -1,26 +1,47 @@
+<!--
+Copyright (C) 2023 Alessandro Amatucci Girlanda
+
+This file is part of Finance.
+
+Finance is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Finance is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Finance. If not, see
+<https: //www.gnu.org/licenses />.
+-->
+
 {% extends "layout.html" %}
 
 {% block title %}
-    Sell
+Sell
 {% endblock %}
 
 {% block main %}
-    <div class="container">
-        <div class="form-group">
-            <form action="/sell" method="post">
-                <div class="mb-3">
-                    <select name="symbol" class="form-control mx-auto w-auto">
-                        <option value="">Select Shares</option>
-                        {% for symbol in symbols %}
-                            <option value={{ symbol }}>{{ symbol }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <input autocomplete="off" class="form-control mx-auto w-auto" name="shares" placeholder="Number of Shares" type="text">
-                </div>
-                <button class="btn btn-primary" type="submit">Sell Shares</button>
-            </form>
-        </div>
+<div class="container">
+    <div class="form-group">
+        <form action="/sell" method="post">
+            <div class="mb-3">
+                <select name="symbol" class="form-control mx-auto w-auto">
+                    <option value="">Select Shares</option>
+                    {% for symbol in symbols %}
+                    <option value={{ symbol }}>{{ symbol }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" class="form-control mx-auto w-auto" name="shares"
+                    placeholder="Number of Shares" type="text">
+            </div>
+            <button class="btn btn-primary" type="submit">Sell Shares</button>
+        </form>
     </div>
+</div>
 {% endblock %}
