@@ -1,20 +1,30 @@
-# Copyright (C) 2023 Alessandro Amatucci Girlanda
 
-# This file is part of Finance.
-
-# Finance is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-
-# Finance is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-# GNU General Public License for more details.
-
-# You should have received a copy of the GNU General Public License
-# along with Finance. If not, see
-# <https: //www.gnu.org/licenses />.
+#  Finance
+#  
+#  Copyright (c) 2023 Alessandro Amatucci Girlanda
+#  
+#  This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike
+#  4.0 International License. To view a copy of this license, visit
+#  http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative
+#  Commons, PO Box 1866, Mountain View, CA 94042, USA.
+#  
+#  You are free to:
+#    - Share — copy and redistribute the material in any medium or format
+#    - Adapt — remix, transform, and build upon the material
+# 
+#  Under the following terms:
+#    - Attribution — You must give appropriate credit, provide a link to the license, and
+#                   indicate if changes were made. You may do so in any reasonable manner,
+#                   but not in any way that suggests the licensor endorses you or your use.
+#    - NonCommercial — You may not use the material for commercial purposes.
+#    - ShareAlike — If you remix, transform, or build upon the material, you must
+#                   distribute your contributions under the same license as the original.
+# 
+#  No additional restrictions — You may not apply legal terms or technological measures
+#  that legally restrict others from doing anything the license permits.
+#
+#  Acknowledgment:
+#  This file includes classes developed by Harvard University CS50.
 
 import os
 

@@ -107,4 +107,4 @@ The code above is taken from the `login.html` file. The `{% extends "layout.html
 Harvard University Online Course (edx50) - [Introduction to Computer Science](https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science)
 
 ## Licence 🖋️
-This project is licensed under the terms of the GNU General Public License, version 3.0.
+This project is licensed under the terms of the Attribution-NonCommercial-ShareAlike 4.0 International.
